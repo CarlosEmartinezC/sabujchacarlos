@@ -75,5 +75,3 @@ position: relative;
 #cssmenu > ul > li.active:after {
 height: 100%;
 }
-
-}
