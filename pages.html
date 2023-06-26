@@ -7,36 +7,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/Pages.css">
+
     <!--Titulo de la pagina-->
     <title>SabujCha</title>
+    <link rel="icon" href="./img/logo-pestaña.ico">
     <!--Custom Fonts-->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header">
-        <div class="zerogrid">
-            <div class="row">
-                <div class="logo">
-                    <a class="site-branding" href="index.html">
-                        <img src="./img/logo.png" />
-                    </a>
-                    <!-- .site-branding -->
+    <header class="item1">
+            <!-- Menu-main -->
+        <nav class="main-header">
+                        <!--main-hamburger-->
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="material-icons">&#xe5d2;</i>
+            </label>
+            <ul class="menu">
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="pages.html">PAGES</a></li>
+                <li><a href="#Prueba">CONTACT</a></li>
+            </ul>
+        </nav>
+            <!-- Logo-en-el-header-->
+        <div class="logo-header">
+            <a href="Index.html"><img src="../img/logo.png" alt="Logo SabujCha"></a>
+        </div>
+                    <!-- imagen-de-carrito-y-opciones-de-moneda-->
+        <div class="carrito">
+            <select class="moneda"><option value="USD" class="buthon-moneda">USD</option><option value="PES" class="buthon-moneda">PES</option></select>
+            <a href="#"><img src="./img/car-shop.PNG" alt=""></a>
+        </div>
+    </header>
+    <main class="top-page-imagen item2">
+            <div class="imagenbackground2">
+                <a href="#" id="imgtop"><img src="./img/slider-1.jpg"></a>
+            </div>
+    </main>
+    <section class="intermedium-page">
+        <div class="item3">
+                        <!-- Container for the image gallery-->
+            <div class="container">
+                <!-- Full-width images whit number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="./img/product-1.jpg" style="width:100%">
                 </div>
-                <div class="col-2-3">
-                    <!-- Menu-main -->
-                    <div id='cssmenu' class="align-right">
-                        <ul>
-                            <li class="active"><a href='Index.html'><span>HOME</span></a></li>
-                            <li><a href='single.html'><span>ABOUT</span></a></li>
-                            <li><a href='archive.html'><span>BLOG</span></a></li>
-                            <li><a href='pages.html'><span>PAGES</span></a></li>
-                            <li class='last'><a href='contact.html'><span>CONTACT</span></a></li>
-                        </ul>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="./img/product-2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">3 / 8</div>
+                        <img src="./img/product-3.jpg" style="width:100%">
+                </div>
+                    
+                <div class="mySlides">
+                    <div class="numbertext">4 / 8</div>
+                        <img src="./img/product-4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 8</div>
+                        <img src="./img/product-5.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                        <img src="./img/product-6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 8</div>
+                        <img src="./img/product-7.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 8</div>
+                        <img src="./img/product-8.jpg" style="width:100%">
+                </div>
+                        <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <!-- Image text -->
+                <div class="caption-container">
+                    <p ></p>
+                </div>
+                        <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/product-8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+        <div class="item4">
+            <h1 id="caption"></h1>
+            <nav class="menu">
+            <li><a href="#"><i></i></a></li>
+            <li><a href="#">32 Reviews</a></li>
+            <li><a href="#">Add Your Reviews</a></li>
+            </nav>
+            <h1 id="price-product"> $260.00</h1>
+            <p>Avaible:<span class="green">In stock</span><br>
+            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+            <br>
+            
+        </div>
+    </section>
+    <right class="item5">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Description</a></li>
+                <li><a href="#">Trags</a></li>
+                <li><a href="#">Review</a></li>
+            </ul>
+        </nav>
+        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+            placerat facer possim assum. Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veiam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+            <br>
+            <br>
+            - Typi non habent claritatem insitam <br>
+            - Est usus legentis in iis qui facit eorum claritatem. <br>
+            - Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.<br>
+            - Claritas est etiam processus dynamicus, qui sequitur  mutationem consuetudim lectorum.
+        </p>
+    </right>
+    <div class="blog-product item6">
+        <div class="container-page">
+            <header class="container-titule">
+                <a href="#" id="">Related Products</a>
+            </header>
+            <div class="producto-latest">
+                <div class="container-pages-image-1">
+                    <a class="porce" href="#"><img src="./img/product-1.jpg" alt="">
+                        <p>-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Nature Close Tea</a><br>
+                        <a class="text2-bt-after">
+                        <br>$100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce" href="#"><img src="./img/product-2.jpg" alt="">
+                        <p id="desc-none">-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Pink wave Cup</a><br>
+                        <a class="text2-bt-after">
+                        <br>$100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce" href="#"><img src="./img/product-3.jpg" alt="">
+                        <p>-50%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Tea and Chai</a><br>
+                        <a class="text2-bt-after">
+                        <br>$100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce" href="#"><img src="./img/product-4.jpg" alt="">
+                        <p id="desc-none">-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Pearly Everlasting</a><br>
+                        <a class="text2-bt-after">
+                        <br>$100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="Prueba item7" id="Prueba">
+        <div class="footer-navigation-inner">
+            <ul class="nav-main">
+                <li class="nav-main-item title">
+                    <h3 class="nav-main-title">My Account</h3>                          </p>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="" >
+                        My Account                        </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="" >
+                        Order History                        </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        WishList                       </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Newsletter                       </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Order History                        </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link"  href="">
+                        International Orders                      </a>
+                </li>
+            </ul>
+            <ul class="nav-main">
+                <li class="nav-main-item title">
+                    <h3 class="nav-main-title">Information</h3>                            </p>
+                </li>
+                    <li class="nav-main-item visible">
+                <a class="nav-main-link" href="">
+                        Flow                        </a>
+                </li>
+                    <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Delivery Information                   </a>
+                </li>
+                    <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Privacy Policy                       </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Terms & Conditions                        </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Customer Service                       </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link"  href="">
+                        Return Policy                     </a>
+                </li>
+            </ul>
+            <ul class="nav-main">
+                <li class="nav-main-item title">
+                    <h3 class="nav-main-title">Quick Links</h3>                          </p>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="" >
+                        Support Center                      </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="" >
+                        Term & Conditions                        </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Shipping                      </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Privacy Policy                      </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        Help                       </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link"  href="">
+                        FAQS                      </a>
+                </li>
+            </ul>
+            <ul class="nav-main">
+                <li class="nav-main-item title">
+                    <h3 class="nav-main-title">Contact Us</h3>                          </p>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="" >
+                        Your address goes here                      </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="" >
+                        0123456789                     </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        0123456789                       </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        demo@example.com                    </a>
+                </li>
+                <li class="nav-main-item visible">
+                    <a class="nav-main-link" href="">
+                        demo@example.com                        </a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-legal-down">
+            <div class="Legal-left">
+                <small>© 2021 <b>SabujCha</b> Made With  By <i class="fa fa-heart" style="font-size:1.1vw;color:red"> </i> <b>HasThemes</b> </small>
+            </div>
+            <div>
+            <img src="./img/payment.png">
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }   
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
 </body>
 </html>
