@@ -168,12 +168,15 @@ header{
 .container-pages h1{
     text-align: center;
 }
+.container-pages a{
+    text-decoration: none;
+}
 .producto-latest{
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 2vw;
         align-items: stretch;
-        margin:0 10px 0 9px
+        margin:0 10px 0 9px;
 }
 .container-pages-image-1 p{
         display: flex;
@@ -276,7 +279,29 @@ header{
     flex-direction: column;
     text-align: center;
     background-image: url(../img/bg-2.jpg);
-    height: 200px;
+    background-repeat: no-repeat;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding: 10vh 10vw;
+}
+
+.email-input{
+    width: auto;
+    height: 07.5vh;
+    margin-right: -1vw;
+    border:1px solid #cecece;
+    text-align: center;
+    background: none;
+
+}
+.button-subscribe{
+    width: 10vw;
+    height: 08vh;
+    border: #000;
+    background-color: #000;
+    color: #f0f0f0;
+    margin: 0;
 }
 .Blog-New{
     display: flex;
@@ -371,7 +396,7 @@ header{
     flex-direction: column;
     justify-content:center;
     text-align: center;
-    width: 26%;
+    width: 83%;
     height: 0vh;
     top: 5vh;
     background:rgba(0,0, 0,.95);
@@ -412,6 +437,9 @@ header{
         font-weight: 7vw;
     } 
 /*--main-movil --*/
+
+/*-- Header--*/
+
 .top-page-text{
     font-size: 2em;
 }
@@ -466,9 +494,6 @@ font-size: 2em;}
     align-items: stretch;
     margin:0 10px 0 9px
 }
-.container-pages a{
-    text-decoration: none;
-}
 .container-pages-image-1 p{
     top: -290px;
     width: 8vw;
@@ -497,18 +522,17 @@ color: #575757;
 line-height: 30px;
 font-family: "Work Sans", sans-serif;
 color: #6d6a6a;
-font-size: 0.1em;
+font-size: 0.8em;
 }
 .container-intermedium .text2-bt-center{
 line-height: 5px;
-font-size: 0.2em;
+font-size: 0.7em;
 }
 
 .product-page{
 display: flex;
 flex-direction: column;
-text-align: center;
-align-items: stretch;
+align-items: center;
 }
 .product-page a{
 text-decoration: none;
@@ -518,7 +542,6 @@ text-decoration: none;
     width: 8vw;
     height: 6vh;
     font-size: 3vw;
-    left: 7vw;
 }
 .titulo_producto{
 position: relative;
@@ -527,7 +550,6 @@ top:-10.59vh;
 .text2-bt-after{
 position: relative;
 top:-10.59vh;
-text-align: center;
 }
 #desc-none{
 opacity: 0;
@@ -540,12 +562,18 @@ background-image: url(../img/bg-2.jpg);
 height: 200px;
 }
 
+.button-subscribe{
+    width: auto;
+}
 .Blog-New{
 display: flex;
 flex-direction: column;
-text-align: center;
+text-align: start;
 background-image: url(../img/bg-1.jpg);
 padding: 10vh 2vw 10vh 2vw;
+}
+.Blog-New h1{
+    text-align: center;
 }
 .product-Blog{
 display: flex;
@@ -588,7 +616,7 @@ list-style: none;
 .footer-navigation-inner h3{
 font-family: 'Work Sans', sans-serif;
 font-size: medium;
-font-weight: lighter;
+font-weight: bolder;
 }
 .footer-navigation-inner a{
 color:#7a7177;
@@ -600,10 +628,10 @@ background-color: rgb(234, 235,234);
 display: flex;
 flex-direction: column;
 padding: 20px;
+align-items: center;
 }
 .Legal-left{
 display: flex;
-float:left;
 align-content: center;
 font-size: 0.9em;
 }
