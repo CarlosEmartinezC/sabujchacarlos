@@ -310,6 +310,9 @@ header{
     background-image: url(../img/bg-1.jpg);
     padding: 10vh 2vw 10vh 2vw;
 }
+.Blog-New h2 {
+    color:#7a7177 !important;
+}
 .product-Blog{
     display: grid;
     grid-template-columns: auto auto auto;
