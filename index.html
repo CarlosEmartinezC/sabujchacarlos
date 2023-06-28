@@ -6,9 +6,7 @@
     <!--Dimensiones de la pagina mobil y en escritorio.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/Pages.css">
-
+    <link rel="stylesheet" href="./css/Style.css">
     <!--Titulo de la pagina-->
     <title>SabujCha</title>
     <link rel="icon" href="./img/logo-pestaña.ico">
@@ -20,10 +18,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <header class="item1">
-            <!-- Menu-main -->
+    <header>
+                    <!-- Menu-main -->
         <nav class="main-header">
-                        <!--main-hamburger-->
+                            <!--main-hamburger-->
             <input type="checkbox" id="check">
             <label for="check" class="bar-btn">
                 <i class="material-icons">&#xe5d2;</i>
@@ -35,141 +33,44 @@
                 <li><a href="pages.html">PAGES</a></li>
                 <li><a href="#Prueba">CONTACT</a></li>
             </ul>
+            
         </nav>
-            <!-- Logo-en-el-header-->
+                <!-- Logo-en-el-header-->
         <div class="logo-header">
             <a href="Index.html"><img src="../img/logo.png" alt="Logo SabujCha"></a>
         </div>
-                    <!-- imagen-de-carrito-y-opciones-de-moneda-->
+        <!-- imagen-de-carrito-y-opciones-de-moneda-->
         <div class="carrito">
             <select class="moneda"><option value="USD" class="buthon-moneda">USD</option><option value="PES" class="buthon-moneda">PES</option></select>
             <a href="#"><img src="./img/car-shop.PNG" alt=""></a>
         </div>
     </header>
-    <main class="top-page-imagen item2">
-            <div class="imagenbackground2">
-                <a href="#" id="imgtop">Single Product</a>
+    <main class="top-page-imagen">
+        <div class="imagenbackground1">
+            <h1 class="top-page-text">Want to stay healthy<br> drink matcha.</h1>
+            <a href="pages.html" id="top-shop">Shop Now</a>
+        </div>
+        <div class="Banner-top">
+            <div class="text1" id="box1">
+            <a class="Descuento">-50% Sale</a>
+                <span>SUMMER VACATION</span>
             </div>
+            <div class="text2">
+                <a class="Descuento">-20% Sale</a>
+                <span>WINTER VACATION</span>
+            </div>
+        </div>
     </main>
-    <section class="intermedium-page">
-        <div class="item3">
-                        <!-- Container for the image gallery-->
-            <div class="container">
-                <!-- Full-width images whit number text -->
-                <div class="mySlides">
-                    <div class="numbertext">1 / 8</div>
-                    <img src="./img/product-1.jpg" style="width:100%">
-                </div>
-                    
-                <div class="mySlides">
-                    <div class="numbertext">2 / 8</div>
-                    <img src="./img/product-2.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides">
-                    <div class="numbertext">3 / 8</div>
-                        <img src="./img/product-3.jpg" style="width:100%">
-                </div>
-                    
-                <div class="mySlides">
-                    <div class="numbertext">4 / 8</div>
-                        <img src="./img/product-4.jpg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">5 / 8</div>
-                        <img src="./img/product-5.jpg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">6 / 8</div>
-                        <img src="./img/product-6.jpg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">7 / 8</div>
-                        <img src="./img/product-7.jpg" style="width:100%">
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">8 / 8</div>
-                        <img src="./img/product-8.jpg" style="width:100%">
-                </div>
-                        <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        <!-- Image text -->
-                <div class="caption-container">
-                    <p ></p>
-                </div>
-                        <!-- Thumbnail images -->
-                <div class="row">
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Snowy Mountains">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="./img/product-8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Snowy Mountains">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item4">
-            <h1 id="caption"></h1>
-            <nav class="menu">
-            <li><a href="#"><i></i></a></li>
-            <li><a href="#">32 Reviews</a></li>
-            <li><a href="#">Add Your Reviews</a></li>
-            </nav>
-            <h1 id="price-product"> $260.00</h1>
-            <p>Avaible:<span class="green">In stock</span><br>
-            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-            <br>
-            
-        </div>
-    </section>
-    <right class="item5">
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Description</a></li>
-                <li><a href="#">Trags</a></li>
-                <li><a href="#">Review</a></li>
-            </ul>
-        </nav>
-        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-            placerat facer possim assum. Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem.
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veiam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-            <br>
-            <br>
-            - Typi non habent claritatem insitam <br>
-            - Est usus legentis in iis qui facit eorum claritatem. <br>
-            - Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.<br>
-            - Claritas est etiam processus dynamicus, qui sequitur  mutationem consuetudim lectorum.
-        </p>
-    </right>
-    <div class="blog-product item6">
-        <div class="container-page">
+    <section>
+        <div class="container-pages">
             <header class="container-titule">
-                <a href="#" id="">Related Products</a>
+                <h1 id="titulo_producto">Latest Products</h1>
+                <p>lore ipsum dolor sit amel,consectetur adipsicing elit sed do<br>
+                ciusmod tempor incididunt.</p>
             </header>
             <div class="producto-latest">
                 <div class="container-pages-image-1">
-                    <a class="porce" href="#"><img src="./img/product-1.jpg" alt="">
+                    <a class="porce" href="#"><img src="./img/product-1.jpg" sizes="100%">
                         <p>-60%</p>
                         </a>
                         <br>
@@ -206,8 +107,145 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="Prueba item7" id="Prueba">
+        <div class="container-intermedium">
+            <img src="./img/testi.png" class="imagen-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed do <br> eiusmod tempor incididunt ut labore.</p>
+            <h4 class="text1-bt-center">GREGORY PERKINS</h4>
+            <span class="text2-bt-center">Customer</span>
+        </div>
+        <div class="container-down">
+            <header class="container-titule">
+                <h1>New Products</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    sed do eiusmod tempor incididunt.
+                </p>
+            </header>
+            <div class="product-page">
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-1.jpg" alt="">
+                    <p>-30%</p>
+                    </a>
+                    <br>
+                    <a class="titulo_producto">Pink wave Cup</a><br>
+                    <a class="text2-bt-after">
+                    $100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-2.jpg" alt="">
+                        <p>-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-3.jpg" alt="">
+                        <p id="desc-none">-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-4.jpg" alt="">
+                        <p>-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-5.jpg" alt="">
+                        <p>-50%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>
+                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-6.jpg" alt="">
+                        <p id="desc-none">-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-7.jpg" alt="">
+                        <p>-40%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>                </div>
+                <div class="container-pages-image-1">
+                    <a class="porce-1" href="#"><img src="./img/product-8.jpg" alt="">
+                        <p id="desc-none">-60%</p>
+                        </a>
+                        <br>
+                        <a class="titulo_producto">Que herbal Tea</a><br>
+                        <a class="text2-bt-after">
+                        $100.00 -<del class="valoralto"> $120,00</del></a>                </div>
+            </div>
+        </div>
+        <div class="newletter">
+            <h1 class="titulo"> Join to our Newsletter</h1>
+            <div class="email-subscribe">
+                <input class="email-input" type="email" placeholder="Your Email Address*">
+                <button class="button-subscribe">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="Blog-New">
+            <h1 class="titulo-blog">Latest News</h1>
+            <div class="product-Blog">
+                <div class="container-blog-image">
+                    <img src="./img/blog-single-1.jpg" alt="" width="100%"><br>
+                    <a class="fecha" href="#">14 Sep</a>
+                    <br>
+                    <h2>Lorem ipsum sit ame co.</h2>
+                    <p class="text-bt-down">Lorem ipsum dolor sit amet, consectetur 
+                        <br>adipisici elit, sed do eius tempor 
+                        <br>incididunt ut labore et dolore</p>
+                        <br>
+                    <button class="button-blog">READ MORE</button>
+                </div>
+                <div class="container-blog-image2">
+                    <img src="./img/blog-single-2.jpg" alt="" width="100%"><br>
+                    <a class="fecha" href="#">20 Dec</a>
+                    <br>
+                    <h2>Lorem ipsum sit ame co.</h2>
+                    <p class="text-bt-down">Lorem ipsum dolor sit amet, consectetur 
+                        <br>adipisici elit, sed do eius tempor 
+                        <br>incididunt ut labore et dolore</p>
+                        <br>
+                    <button class="button-blog">READ MORE</button>
+                </div>
+                <div class="container-blog-image3">
+                    <img src="./img/blog-single-3.jpg" alt="" width="100%"><br>
+                    <a class="fecha" href="#">18 Aug</a>
+                    <br>
+                    <h2>Lorem ipsum sit ame co.</h2>
+                    <p class="text-bt-down">Lorem ipsum dolor sit amet, consectetur 
+                        <br>adipisici elit, sed do eius tempor 
+                        <br>incididunt ut labore et dolore</p>
+                        <br>
+                    <button class="button-blog" href="archive.html">READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="imagenes-lastdown">
+            <img src="./img/1.jpg">
+            <img src="./img/2.jpg">
+            <img src="./img/3.jpg">
+            <img src="./img/4.jpg">
+            <img src="./img/5.jpg">
+        </div>
+    </section>
+    <footer class="Prueba" id="Prueba">
         <div class="footer-navigation-inner">
             <ul class="nav-main">
                 <li class="nav-main-item title">
@@ -324,41 +362,13 @@
         </div>
         <div id="footer-legal-down">
             <div class="Legal-left">
-                <small>© 2021 <b>SabujCha</b> Made With  By <i class="fa fa-heart" style="font-size:1.1vw;color:red"> </i> <b>HasThemes</b> </small>
+                <small>© 2021 <b>SabujCha</b> Made With  By <i class="fa fa-heart" style="font-size:2vh;color:red"> </i> <b>HasThemes</b> </small>
             </div>
             <div>
             <img src="./img/payment.png">
             </div>
         </div>
     </footer>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }   
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-    </script>
+    <!-- gracias-->
 </body>
 </html>
